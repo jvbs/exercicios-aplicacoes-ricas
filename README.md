@@ -3,7 +3,7 @@
 *executar em cada projeto
 
 ```bash
-  npm i
   cd projeto/
+  npm i
   ng serve
 ```
