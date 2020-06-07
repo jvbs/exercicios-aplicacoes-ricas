@@ -1,18 +1,19 @@
-import * as rs from 'readline-sync'
+import * as rs from "readline-sync";
 
-let nPares = 0, esp = "";
+let numPar = 0,
+    ksc = "";
 
-while (nPares <= 12) {
-    if (nPares == 12) {
-        esp += nPares;
+while (numPar <= 12) {
+  if (numPar == 12) {
+    ksc += numPar;
     break;
-    }
-    if (nPares % 2 != 0) {
-        esp += "";
-    } else {
-        esp += nPares + ",";
-    }
-        nPares++;
+  }
+  if (numPar % 2 != 0) {
+    ksc += "";
+  } else {
+    ksc += numPar + ",";
+  }
+  numPar++;
 }
 
-console.log(esp);
+console.log(ksc);

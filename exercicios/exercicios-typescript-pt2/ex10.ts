@@ -1,11 +1,11 @@
 import * as rs from "readline-sync";
 
 do {
-    var palavra = String(rs.question("Digite uma palavra que coMece com a letra (p) ou contenha a letra (f): "));
+    var palavra = String(rs.question("Digite uma palavra que comece com a letra (p) ou contenha a letra (f): "));
     var letra = palavra;
-    var texto  = palavra.includes("f");
+    var texto  = palavra.search("f");
     console.log(texto);
 
-} while (letra != "p" || texto === false );
+} while (letra != "p" || texto === -1 );
 
 console.log("Positivo");

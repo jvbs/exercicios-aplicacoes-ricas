@@ -1,17 +1,15 @@
-import * as rs from 'readline-sync';
-
-console.log('Exercicio 4');
+import * as rs from "readline-sync";
 
 // Celsius
-const cel = rs.question('Digite uma temperatura em graus Celsius');
-
-// Fahrenheit
-const fah: number = (Number(cel) * 1.8) + 32;
+const celsius = rs.question("Digite a temperatura em Celsius");
 
 // Kelvin
-const kel: number = Number(cel) + 273.15;
+const kelvin: number = Number(celsius) + 273.15;
+
+// Fahrenheit
+const fahrenheit: number = Number(celsius) * 1.8 + 32;
 
 // Resultados
-console.log('Celsius inserido: ' + cel);
-console.log('Fahrenheit: ' + fah);
-console.log('Kelvin: ' + kel);
+console.log("Celsius: " + celsius);
+console.log("Fahrenheit: " + fahrenheit);
+console.log("Kelvin: " + kelvin);

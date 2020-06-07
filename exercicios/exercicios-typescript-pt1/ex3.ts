@@ -1,9 +1,8 @@
-import * as rs from 'readline-sync';
+import * as rs from "readline-sync";
 
-console.log('Exercicio 3');
-const valor1 = rs.question('Digite a base do triangulo');
-const valor2 = rs.question('Digite a altura do triangulo');
+const vl1 = rs.question("Digite a base");
+const vl2 = rs.question("Digite a altura");
 
-const result: number = ( (parseInt(valor1) * parseInt(valor2)) / 2  );
+const result: number = (parseInt(vl1) * parseInt(vl2)) / 2;
 
-console.log('Area do triangulo: ' + result);
+console.log("Area do triangulo: " + result);
