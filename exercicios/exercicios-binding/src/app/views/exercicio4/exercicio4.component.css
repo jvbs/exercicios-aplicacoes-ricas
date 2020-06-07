@@ -1,0 +1,16 @@
+/* fiz alguns estilos diferentes da proposta */
+
+.class_img1 {
+  width: 36%;
+  border-radius: 250px;
+}
+
+.class_img2 {
+  width: 22%;
+  box-shadow: 10px 54px black;
+}
+
+.class_img3 {
+  width: 250px;
+  border: 3px solid red;
+}

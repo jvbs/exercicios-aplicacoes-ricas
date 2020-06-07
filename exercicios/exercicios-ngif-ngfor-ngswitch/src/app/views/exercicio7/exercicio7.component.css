@@ -1,0 +1,14 @@
+.post {
+  background-color: rgb(238, 238, 238);
+  width: 250px;
+  height: auto;
+  padding: 25px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+span {
+  text-transform: uppercase;
+  font-weight: bold;
+}

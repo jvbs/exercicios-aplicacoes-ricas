@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col-12">
+    <h2>Relógio Mundial</h2>
+
+    <!-- <ul *ngFor="let local of localesObj">
+      <li>local: {{local}}</li>
+    </ul> -->
+    <br>
+    <select class="form-control" [(ngModel)]="consulta">
+      <option *ngFor="let local of localesObj" >{{ local }}</option>
+    </select>
+    <br>
+    <button (click)="consultarTimezone()" class="btn btn-success">Consulta</button>
+    <br>
+    <div *ngIf="timezone" class="form-group">
+      Local: {{ timezone.timezone }}<br>
+      Hora: {{ timezone.datetime }}
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<h2>Qual exercicío deseja acessar?</h2>
+
+<ul>
+  <li (click)="setSearch(1)">Exercicío 1</li>
+  <li (click)="setSearch(2)">Exercicío 2</li>
+  <li (click)="setSearch(3)">Exercicío 3</li>
+  <li (click)="setSearch(4)">Exercicío 4</li>
+  <li (click)="setSearch(5)">Exercicío 5</li>
+  <li (click)="setSearch(6)">Exercicío 6</li>
+  <li (click)="setSearch(7)">Exercicío 7</li>
+  <li (click)="setSearch(8)">Exercicío 8</li>
+  <li (click)="setSearch(9)">Exercicío 9</li>
+  <li (click)="setSearch(10)">Sobre mim</li>
+</ul>
+
+<hr>
+
+<div [ngSwitch]="search">
+  <app-exercicio1 *ngSwitchCase="1"></app-exercicio1>
+  <app-exercicio2 *ngSwitchCase="2"></app-exercicio2>
+  <app-exercicio3 *ngSwitchCase="3"></app-exercicio3>
+  <app-exercicio4 *ngSwitchCase="4"></app-exercicio4>
+  <app-exercicio5 *ngSwitchCase="5"></app-exercicio5>
+  <app-exercicio6 *ngSwitchCase="6"></app-exercicio6>
+  <app-exercicio7 *ngSwitchCase="7"></app-exercicio7>
+  <app-exercicio8 *ngSwitchCase="8"></app-exercicio8>
+  <app-exercicio9 *ngSwitchCase="9"></app-exercicio9>
+  <app-sobre-mim *ngSwitchCase="10"></app-sobre-mim>
+
+</div>

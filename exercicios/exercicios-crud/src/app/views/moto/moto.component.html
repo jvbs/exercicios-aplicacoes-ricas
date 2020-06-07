@@ -1,0 +1,93 @@
+<h2>Minhas Motos</h2>
+
+<div class="row mt-1 mb-3">
+  <div class="col-12">
+    <button class="btn btn-success" (click)="newMoto()">Nova moto</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <th>Nome da Moto</th>
+          <th>Cilindradas</th>
+          <th>Tipo</th>
+          <th>Ano de Fabricação</th>
+          <th>Marca</th>
+          <th>Ações</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let moto of motos">
+            <td>{{ moto.nome }}</td>
+            <td>{{ moto.cilindradas }}cc</td>
+            <td>{{ moto.tipo }}</td>
+            <td>{{ moto.ano }}</td>
+            <td>{{ moto.marca }}</td>
+            <td>
+              <button class="btn btn-warning mr-2" (click)="selectMoto(moto)">Editar</button>
+              <button class="btn btn-danger" (click)="remove(moto.id)">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<div class="row" *ngIf="selectedMoto">
+  <div class="col-12">
+    <div class="form-group">
+      <label>Nome da Moto</label>
+      <input class="form-control" type="text" [(ngModel)]="selectedMoto.nome">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-group">
+      <label>Cilindradas da Moto</label>
+      <input class="form-control" type="number" [(ngModel)]="selectedMoto.cilindradas">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-group">
+      <label>Tipo da Moto</label>
+      <input class="form-control" type="text" [(ngModel)]="selectedMoto.tipo">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-group">
+      <label>Ano de Fabricação</label>
+      <input class="form-control" type="number" [(ngModel)]="selectedMoto.ano">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-group">
+      <label>Marca</label>
+      <input class="form-control" type="text" [(ngModel)]="selectedMoto.marca">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-group">
+      <button class="btn btn-danger" (click)="cancel()">Cancelar</button>
+      <button class="btn btn-success ml-2" (click)="save()">Salvar</button>
+    </div>
+  </div>
+</div>
+<!--
+<div *ngIf="selectedMoto">
+  <input type="text" placeholder="Nome da Moto" [(ngModel)]="selectedMoto.nome"><br>
+
+  <input type="number" placeholder="Cilindradas da Moto" [(ngModel)]="selectedMoto.cilindradas"><br>
+
+  <input type="text" placeholder="Tipo de Moto" [(ngModel)]="selectedMoto.tipo"><br>
+
+  <input type="number" placeholder="Ano da Moto" [(ngModel)]="selectedMoto.ano"><br>
+
+  <input type="text" placeholder="Marca da Moto" [(ngModel)]="selectedMoto.marca"><br>
+
+  <button (click)="save()">Salvar</button>
+  <button (click)="cancel()">Cancelar</button>
+</div> -->
+
+

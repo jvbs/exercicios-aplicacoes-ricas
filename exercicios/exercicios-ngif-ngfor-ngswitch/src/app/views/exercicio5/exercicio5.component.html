@@ -1,0 +1,5 @@
+<h2>Exercicio 5</h2>
+
+<div>
+  <img *ngFor="let dog of dogs" (click)="showAlert(dog)" style="width: 250px" src="assets/{{ dog }}.jpg" alt="">
+</div>

@@ -1,0 +1,11 @@
+<h2>Exercicio 8</h2>
+
+<input type="text" [(ngModel)] = "inputName">
+<button (click)="pushName(inputName)">inserir</button>
+
+<br>
+
+<h3>lista de nomes</h3>
+<ul>
+  <li *ngFor="let name of names">{{ name }}</li>
+</ul>

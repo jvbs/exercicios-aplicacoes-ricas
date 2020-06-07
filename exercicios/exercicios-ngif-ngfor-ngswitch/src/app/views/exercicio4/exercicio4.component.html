@@ -1,0 +1,20 @@
+<h2>Exercicio 4</h2>
+
+<input type="number" [(ngModel)]="num1" placeholder="Primeiro numero">
+
+<br>
+
+<input type="number" [(ngModel)]="num2" placeholder="Segundo numero">
+
+<br>
+
+<div>
+  <button (click)="calcular('somar')">+</button>
+  <button (click)="calcular('subtrair')">-</button>
+  <button (click)="calcular('multiplicar')">*</button>
+  <button (click)="calcular('dividir')">/</button>
+</div>
+
+<br>
+
+<input type="text" value="{{ resultado }}">

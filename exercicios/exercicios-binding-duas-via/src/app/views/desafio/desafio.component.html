@@ -1,0 +1,13 @@
+<h2>Desafio</h2>
+
+<input type="number" [(ngModel)]="num1" placeholder="Numero"><br>
+<input type="number" [(ngModel)]="num2" placeholder="Outro numero"><br>
+
+<p>Operações</p>
+
+<input type="radio" value="+" [(ngModel)]="operacao">+
+<input type="radio" value="-" [(ngModel)]="operacao">-
+<input type="radio" value="*" [(ngModel)]="operacao">*
+<input type="radio" value="/" [(ngModel)]="operacao">/
+
+<p>Resultado: {{ calculate() }}</p>

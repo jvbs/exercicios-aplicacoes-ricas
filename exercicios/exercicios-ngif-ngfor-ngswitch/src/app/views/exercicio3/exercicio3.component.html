@@ -1,0 +1,14 @@
+<h2>Exercicio 3</h2>
+
+<select [(ngModel)]="selecionado">
+  <option value="whats">WhatsApp</option>
+  <option value="email">Email</option>
+</select>
+
+<div *ngIf="selecionado === 'whats'">
+  <input type="tel" placeholder="WhatsApp">
+</div>
+
+<div *ngIf="selecionado === 'email'">
+  <input type="email" placeholder="E-mail">
+</div>

@@ -1,0 +1,22 @@
+<h2>Exercicio 9</h2>
+
+
+<ul>
+  <li>Orochinho</li>
+  <li>Rocketseat</li>
+  <li>Em busca do shape inexplicável</li>
+  <li>Traversy Media</li>
+</ul>
+
+<br>
+
+<input type="text" placeholder="qual canal quer acessar?" [(ngModel)]="channel">
+
+<div class="canal" [ngSwitch]="lowercase(channel)">
+  <a *ngSwitchCase="'orochinho'" href="https://www.youtube.com/channel/UC-eqG9dW9ydhDGs_t67URMg">Orochinho</a>
+  <a *ngSwitchCase="'rocketseat'" href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg">Rocketseat</a>
+  <a *ngSwitchCase="'em busca do shape inexplicável'" href="https://www.youtube.com/user/shapeinexplicavel">Em busca do shape inexplicável</a>
+  <a *ngSwitchCase="'traversy media'" href="https://www.youtube.com/user/TechGuyWeb">Traversy Media</a>
+</div>
+
+<br>
